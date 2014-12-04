@@ -1,0 +1,255 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/box-shadow";
+
+$background-color-white: HSL(0, 0%, 100%);
+$background-color: HSL(45, 12%, 93%);
+$font-color-green: HSL(137, 20%, 24%);
+$font-color-green-lighter: HSL(130, 6%, 60%);
+$font-color-black: HSL(0, 0%, 13%);
+$font-color-Monsoon: HSL(0, 0%, 48%);
+
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  text-align: center;
+  background: url("/images/bg.gif") repeat 0 0 #efeeeb;
+}
+
+nav {
+  position: absolute;
+  position: fixed;
+  background-color: $background-color-white;
+  width: 100%;
+  height: 6em;
+  @include box-shadow();
+  line-height: 6em;
+  box-sizing: border-box;
+
+  .nav-left {
+    width: 50%;
+    float: left;
+    .logo {
+      position: absolute;
+      left: 80px;
+      font-size: 2.4em;
+      color: $font-color-green;
+      text-decoration: none;
+    }
+
+    .search-input {
+      position: absolute;
+      margin-left: 170px;
+      input {
+        width: 250px;
+        height: 30px;
+        border-radius: 15px;
+        border: 1px $background-color solid;
+        padding-left: 12px;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      i {
+        font-size: 1.5em;
+        position: absolute;
+        top: 22px;
+        left: 230px;
+      }
+    }
+  }
+
+  .nav-right {
+    width: 50%;
+    float: right;
+    text-align: right;
+    font-size: 2.4em;
+    a {
+      text-decoration: none;
+      color: $font-color-green;
+      margin: auto 10px;
+      &:last-child {
+        margin-right: 80px;
+      }
+    }
+  }
+}
+
+.container {
+  width: 1000px;
+  overflow: hidden;
+  margin: auto;
+}
+
+header {
+  background: url("/images/02.jpg") no-repeat;
+  background-size: cover;
+  height: 560px;
+  margin-top: 80px;
+  overflow: hidden;
+  border: 1px $background-color solid;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  div {
+    width: 120px;
+    height: 120px;
+    margin: 200px auto 20px auto;
+    border-radius: 50%;
+    border: 2px HSL(240, 3%, 79%) solid;
+    padding: 5px;
+    @include box-shadow();
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+  }
+
+  h1, h3 {
+    color: white;
+    margin-bottom: 10px;
+  }
+}
+
+.account-info {
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  border-right: 5px $background-color solid;
+  .total-number {
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    li {
+      display: inline-block;
+      width: 33.33%;
+      float: left;
+      padding: 10px 0;
+      position: relative;
+      background-color: white;
+      h2 {
+        padding: 5px;
+        a {
+          color: $font-color-green;
+          text-decoration: none;
+
+          &:hover {
+            color: $font-color-green-lighter;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.3em;
+        color: $font-color-green-lighter;
+      }
+    }
+
+    li:first-child::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: $font-color-green-lighter;
+      top: 63px;
+      left: 0;
+    }
+  }
+
+  .poetry-familiar {
+    margin-top: 20px;
+    li {
+      position: relative;
+      text-align: left;
+      line-height: 60px;
+      background-color: $background-color-white;
+      overflow: hidden;
+      box-sizing: border-box;
+      border-bottom: 1px $background-color solid;
+      img {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        left: 30px;
+        top: 10px;
+      }
+
+      .poetry-info {
+        color: $font-color-green;
+        float: left;
+        h3 {
+          margin-left: 90px;
+          i {
+            font-size: 10px;
+            margin-left: 20px;
+          }
+          span {
+            color: $font-color-green-lighter;
+          }
+        }
+
+        .icon-heart {
+          //          float: right;
+        }
+      }
+    }
+  }
+}
+
+.poetry-class {
+  float: left;
+  width: 65%;
+  margin-top: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-left: 5px $background-color solid;
+  .title {
+    height: 40px;
+    line-height: 40px;
+    color: $font-color-green;
+    background-color: white;
+    border-bottom: 2px $background-color solid;
+    border-radius: 3px;
+  }
+  ul {
+    li {
+      display: inline-block;
+      width: 25%;
+      height: 300px;
+      line-height: 300px;
+      float: left;
+      box-sizing: border-box;
+      background-color: white;
+      border: 1px $background-color solid;
+
+      &:focus {
+
+      }
+    }
+  }
+}
+
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: $background-color-white;
+}

@@ -1,0 +1,331 @@
+/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/page-style.scss */
+h1 {
+  font-size: 2.4em;
+}
+
+/* line 16, ../sass/page-style.scss */
+h2 {
+  font-size: 2.2em;
+}
+
+/* line 20, ../sass/page-style.scss */
+h3 {
+  font-size: 1.8em;
+}
+
+/* line 24, ../sass/page-style.scss */
+h4 {
+  font-size: 1.6em;
+}
+
+/* line 28, ../sass/page-style.scss */
+body {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  text-align: center;
+  background: url("/images/bg.gif") repeat 0 0 #efeeeb;
+}
+
+/* line 35, ../sass/page-style.scss */
+nav {
+  position: absolute;
+  position: fixed;
+  background-color: HSL(0, 0%, 100%);
+  width: 100%;
+  height: 6em;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  line-height: 6em;
+  box-sizing: border-box;
+}
+/* line 45, ../sass/page-style.scss */
+nav .nav-left {
+  width: 50%;
+  float: left;
+}
+/* line 48, ../sass/page-style.scss */
+nav .nav-left .logo {
+  position: absolute;
+  left: 80px;
+  font-size: 2.4em;
+  color: HSL(137, 20%, 24%);
+  text-decoration: none;
+}
+/* line 56, ../sass/page-style.scss */
+nav .nav-left .search-input {
+  position: absolute;
+  margin-left: 170px;
+}
+/* line 59, ../sass/page-style.scss */
+nav .nav-left .search-input input {
+  width: 250px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px HSL(45, 12%, 93%) solid;
+  padding-left: 12px;
+}
+/* line 66, ../sass/page-style.scss */
+nav .nav-left .search-input input:focus {
+  outline: 0;
+}
+/* line 71, ../sass/page-style.scss */
+nav .nav-left .search-input i {
+  font-size: 1.5em;
+  position: absolute;
+  top: 22px;
+  left: 230px;
+}
+/* line 80, ../sass/page-style.scss */
+nav .nav-right {
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-size: 2.4em;
+}
+/* line 85, ../sass/page-style.scss */
+nav .nav-right a {
+  text-decoration: none;
+  color: HSL(137, 20%, 24%);
+  margin: auto 10px;
+}
+/* line 89, ../sass/page-style.scss */
+nav .nav-right a:last-child {
+  margin-right: 80px;
+}
+
+/* line 96, ../sass/page-style.scss */
+.container {
+  width: 1000px;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* line 102, ../sass/page-style.scss */
+header {
+  background: url("/images/02.jpg") no-repeat;
+  background-size: cover;
+  height: 560px;
+  margin-top: 80px;
+  overflow: hidden;
+  border: 1px HSL(45, 12%, 93%) solid;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 111, ../sass/page-style.scss */
+header div {
+  width: 120px;
+  height: 120px;
+  margin: 200px auto 20px auto;
+  border-radius: 50%;
+  border: 2px HSL(240, 3%, 79%) solid;
+  padding: 5px;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+/* line 119, ../sass/page-style.scss */
+header div img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+/* line 126, ../sass/page-style.scss */
+header h1, header h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* line 132, ../sass/page-style.scss */
+.account-info {
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  border-right: 5px HSL(45, 12%, 93%) solid;
+}
+/* line 137, ../sass/page-style.scss */
+.account-info .total-number {
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 141, ../sass/page-style.scss */
+.account-info .total-number li {
+  display: inline-block;
+  width: 33.33%;
+  float: left;
+  padding: 10px 0;
+  position: relative;
+  background-color: white;
+}
+/* line 148, ../sass/page-style.scss */
+.account-info .total-number li h2 {
+  padding: 5px;
+}
+/* line 150, ../sass/page-style.scss */
+.account-info .total-number li h2 a {
+  color: HSL(137, 20%, 24%);
+  text-decoration: none;
+}
+/* line 154, ../sass/page-style.scss */
+.account-info .total-number li h2 a:hover {
+  color: HSL(130, 6%, 60%);
+}
+/* line 160, ../sass/page-style.scss */
+.account-info .total-number li p {
+  font-size: 1.3em;
+  color: HSL(130, 6%, 60%);
+}
+/* line 166, ../sass/page-style.scss */
+.account-info .total-number li:first-child::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: HSL(130, 6%, 60%);
+  top: 63px;
+  left: 0;
+}
+/* line 177, ../sass/page-style.scss */
+.account-info .poetry-familiar {
+  margin-top: 20px;
+}
+/* line 179, ../sass/page-style.scss */
+.account-info .poetry-familiar li {
+  position: relative;
+  text-align: left;
+  line-height: 60px;
+  background-color: HSL(0, 0%, 100%);
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px HSL(45, 12%, 93%) solid;
+}
+/* line 187, ../sass/page-style.scss */
+.account-info .poetry-familiar li img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 30px;
+  top: 10px;
+}
+/* line 196, ../sass/page-style.scss */
+.account-info .poetry-familiar li .poetry-info {
+  color: HSL(137, 20%, 24%);
+  float: left;
+}
+/* line 199, ../sass/page-style.scss */
+.account-info .poetry-familiar li .poetry-info h3 {
+  margin-left: 90px;
+}
+/* line 201, ../sass/page-style.scss */
+.account-info .poetry-familiar li .poetry-info h3 i {
+  font-size: 10px;
+  margin-left: 20px;
+}
+/* line 205, ../sass/page-style.scss */
+.account-info .poetry-familiar li .poetry-info h3 span {
+  color: HSL(130, 6%, 60%);
+}
+
+/* line 218, ../sass/page-style.scss */
+.poetry-class {
+  float: left;
+  width: 65%;
+  margin-top: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-left: 5px HSL(45, 12%, 93%) solid;
+}
+/* line 225, ../sass/page-style.scss */
+.poetry-class .title {
+  height: 40px;
+  line-height: 40px;
+  color: HSL(137, 20%, 24%);
+  background-color: white;
+  border-bottom: 2px HSL(45, 12%, 93%) solid;
+  border-radius: 3px;
+}
+/* line 234, ../sass/page-style.scss */
+.poetry-class ul li {
+  display: inline-block;
+  width: 25%;
+  height: 300px;
+  line-height: 300px;
+  float: left;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px HSL(45, 12%, 93%) solid;
+}
+
+/* line 251, ../sass/page-style.scss */
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: HSL(0, 0%, 100%);
+}
