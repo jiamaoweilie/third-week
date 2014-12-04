@@ -42,6 +42,10 @@ nav {
   line-height: 6em;
   box-sizing: border-box;
 
+  a:hover{
+    color: $font-color-green-lighter;
+  }
+  
   .nav-left {
     width: 50%;
     float: left;
