@@ -30,6 +30,7 @@ body {
   font-family: sans-serif;
   text-align: center;
   background: url("/images/bg.gif") repeat 0 0 #efeeeb;
+  color: $font-color-green;
 }
 
 nav {
@@ -63,7 +64,7 @@ nav {
 
     .search-input {
       position: absolute;
-      margin-left: 100px;
+      margin-left: 120px;
       input {
         width: 250px;
         height: 30px;
@@ -80,7 +81,7 @@ nav {
         font-size: 1.5em;
         position: absolute;
         top: 22px;
-        left: 230px;
+        left: 240px;
       }
     }
   }
@@ -152,7 +153,7 @@ nav {
     }
   }
 
-  .more{
+  .more {
     font-size: 2.0em;
     text-decoration: none;
     color: $font-color-green-lighter;
@@ -174,7 +175,7 @@ nav {
         border-right: 20px;
         h3 {
           float: left;
-          &.name{
+          &.name {
             margin-left: 10px;
             color: $font-color-green-lighter;
           }
@@ -198,36 +199,37 @@ nav {
 
   .friends {
     padding: 20px 30px 20px 20px;
-    h2{
+    border-bottom: 20px $background-color solid;
+    h2 {
       margin-bottom: 10px;
     }
-    ul{
+    ul {
       overflow: hidden;
       margin-bottom: 10px;
-      li{
+      li {
         position: relative;
         width: 100%;
         margin-bottom: 10px;
-        img{
+        img {
           width: 40px;
           height: 40px;
           @include border-radius(50%);
           position: absolute;
         }
 
-        .friend{
+        .friend {
           margin-left: 60px;
-          .friend-name{
+          .friend-name {
             float: left;
             margin-bottom: 5px;
           }
-          a{
+          a {
             float: right;
             font-size: 1.8em;
             color: $font-color-green-lighter;
           }
 
-          p{
+          p {
             clear: both;
             font-size: 1.5em;
             color: $font-color-green-lighter;
@@ -284,73 +286,62 @@ nav {
 
   .poetry-familiar {
     margin-top: 20px;
+    overflow: hidden;
+    background-color: $background-color-white;
     li {
       position: relative;
-      text-align: center;
-      line-height: 60px;
-      background-color: $background-color-white;
+      text-align: left;
       overflow: hidden;
       box-sizing: border-box;
-      border-bottom: 1px $background-color solid;
+      padding: 20px;
+      border-bottom: 2px $background-color solid;
       img {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        left: 30px;
-        top: 10px;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 5px;
+      }
+      .famous{
+        font-size: 1.8em;
+        float: left;
+        margin-bottom: 5px;
       }
 
-      .poetry-info {
-        color: $font-color-green;
-        h3 {
-          i {
-            font-size: 10px;
-            margin-left: 20px;
-          }
-          span {
-            color: $font-color-green-lighter;
-          }
-        }
+      .time{
+        float: right;
+        font-size: 1.5em;
+        color: $font-color-green-lighter;
+      }
 
-        .icon-heart {
+      h3{
+        margin-bottom: 10px;
+      }
+
+      .content{
+        font-size: 1.5em;
+        line-height: 1.3;
+        color: $font-color-green-lighter;
+      }
+
+      .icons{
+        font-size: 1.5em;
+        a{
+          margin: 10px 20px 0px 0;
+          text-decoration: none;
+          color: $font-color-green-lighter;
+          float: left;
+          &:last-child{
+            margin-right: 0;
+            float: right;
+          }
+
+          &:hover{
+            color: $font-color-green;
+          }
         }
       }
     }
   }
-}
 
-.poetry-class {
-  float: left;
-  width: 100%;
-  margin-top: 20px;
-  overflow: hidden;
-  box-sizing: border-box;
-  .title {
-    height: 40px;
-    line-height: 40px;
-    color: $font-color-green;
-    background-color: white;
-    border-bottom: 2px $background-color solid;
-    border-radius: 3px;
-  }
-  ul {
-    margin-bottom: 20px;
-    li {
-      display: inline-block;
-      width: 25%;
-      height: 250px;
-      line-height: 250px;
-      float: left;
-      box-sizing: border-box;
-      background-color: white;
-      border: 1px $background-color solid;
-
-      &:focus {
-
-      }
-    }
-  }
 }
 
 footer {
