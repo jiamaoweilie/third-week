@@ -107,21 +107,17 @@ nav {
   z-index: 9999;
 }
 /* line 47, ../sass/page-style.scss */
-nav a:hover {
-  color: HSL(130, 6%, 60%);
-}
-/* line 51, ../sass/page-style.scss */
 nav .nav-container {
   margin: auto;
   width: 1000px;
   position: relative;
 }
-/* line 57, ../sass/page-style.scss */
+/* line 53, ../sass/page-style.scss */
 nav .nav-left {
   width: 50%;
   float: left;
 }
-/* line 60, ../sass/page-style.scss */
+/* line 56, ../sass/page-style.scss */
 nav .nav-left .logo {
   position: absolute;
   left: 0px;
@@ -129,12 +125,12 @@ nav .nav-left .logo {
   color: HSL(137, 20%, 24%);
   text-decoration: none;
 }
-/* line 68, ../sass/page-style.scss */
+/* line 64, ../sass/page-style.scss */
 nav .nav-left .search-input {
   position: absolute;
   margin-left: 100px;
 }
-/* line 71, ../sass/page-style.scss */
+/* line 67, ../sass/page-style.scss */
 nav .nav-left .search-input input {
   width: 250px;
   height: 30px;
@@ -142,25 +138,25 @@ nav .nav-left .search-input input {
   border: 1px HSL(45, 12%, 93%) solid;
   padding-left: 12px;
 }
-/* line 78, ../sass/page-style.scss */
+/* line 74, ../sass/page-style.scss */
 nav .nav-left .search-input input:focus {
   outline: 0;
 }
-/* line 83, ../sass/page-style.scss */
+/* line 79, ../sass/page-style.scss */
 nav .nav-left .search-input i {
   font-size: 1.5em;
   position: absolute;
   top: 22px;
   left: 230px;
 }
-/* line 92, ../sass/page-style.scss */
+/* line 88, ../sass/page-style.scss */
 nav .nav-right {
   width: 50%;
   float: right;
   text-align: right;
   font-size: 2.4em;
 }
-/* line 97, ../sass/page-style.scss */
+/* line 93, ../sass/page-style.scss */
 nav .nav-right img {
   width: 40px;
   height: 40px;
@@ -169,41 +165,183 @@ nav .nav-right img {
   border-radius: 50%;
   padding-top: 20px;
 }
-/* line 103, ../sass/page-style.scss */
+/* line 99, ../sass/page-style.scss */
 nav .nav-right a {
   text-decoration: none;
   color: HSL(137, 20%, 24%);
   margin: auto 10px;
 }
 
-/* line 111, ../sass/page-style.scss */
+/* line 107, ../sass/page-style.scss */
 .container {
   width: 1000px;
   overflow: hidden;
   margin: 60px auto 20px auto;
 }
 
-/* line 118, ../sass/page-style.scss */
+/* line 114, ../sass/page-style.scss */
 .account-info {
   float: left;
   width: 35%;
   margin-top: 20px;
   box-sizing: border-box;
+  background-color: HSL(0, 0%, 100%);
+  border-right: 20px HSL(45, 12%, 93%) solid;
+  text-align: left;
+}
+/* line 123, ../sass/page-style.scss */
+.account-info .account {
+  border-bottom: 20px HSL(45, 12%, 93%) solid;
+  text-align: center;
+}
+/* line 126, ../sass/page-style.scss */
+.account-info .account img {
+  width: 120px;
+  height: 120px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 30px auto 20px auto;
+}
+/* line 133, ../sass/page-style.scss */
+.account-info .account h2 {
+  margin-bottom: 10px;
+}
+/* line 137, ../sass/page-style.scss */
+.account-info .account p {
+  font-size: 1.5em;
+  margin: 0 15% 10px 15%;
+  line-height: 1.3;
+}
+/* line 143, ../sass/page-style.scss */
+.account-info .account button {
+  width: 150px;
+  line-height: 1;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: HSL(45, 12%, 93%);
+  border: none;
+}
+/* line 155, ../sass/page-style.scss */
+.account-info .more {
+  font-size: 2.0em;
+  text-decoration: none;
+  color: HSL(130, 6%, 60%);
+}
+/* line 161, ../sass/page-style.scss */
+.account-info .recent-read {
+  padding: 20px 30px 20px 20px;
+  border-bottom: 20px HSL(45, 12%, 93%) solid;
+}
+/* line 164, ../sass/page-style.scss */
+.account-info .recent-read h2 {
+  padding-bottom: 10px;
+}
+/* line 167, ../sass/page-style.scss */
+.account-info .recent-read ul {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/* line 170, ../sass/page-style.scss */
+.account-info .recent-read ul li {
+  overflow: hidden;
+  width: 100%;
+  line-height: 1.5;
+  border-right: 20px;
+}
+/* line 175, ../sass/page-style.scss */
+.account-info .recent-read ul li h3 {
+  float: left;
+}
+/* line 177, ../sass/page-style.scss */
+.account-info .recent-read ul li h3.name {
+  margin-left: 10px;
+  color: HSL(130, 6%, 60%);
+}
+/* line 182, ../sass/page-style.scss */
+.account-info .recent-read ul li a {
+  float: right;
+  font-size: 1.8em;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  text-decoration: none;
+  color: HSL(130, 6%, 60%);
+}
+/* line 190, ../sass/page-style.scss */
+.account-info .recent-read ul .icon-dot {
+  font-size: 1.8em;
+  float: left;
+  line-height: 1.5em;
+}
+/* line 199, ../sass/page-style.scss */
+.account-info .friends {
+  padding: 20px 30px 20px 20px;
+}
+/* line 201, ../sass/page-style.scss */
+.account-info .friends h2 {
+  margin-bottom: 10px;
+}
+/* line 204, ../sass/page-style.scss */
+.account-info .friends ul {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/* line 207, ../sass/page-style.scss */
+.account-info .friends ul li {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 211, ../sass/page-style.scss */
+.account-info .friends ul li img {
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+}
+/* line 218, ../sass/page-style.scss */
+.account-info .friends ul li .friend {
+  margin-left: 60px;
+}
+/* line 220, ../sass/page-style.scss */
+.account-info .friends ul li .friend .friend-name {
+  float: left;
+  margin-bottom: 5px;
+}
+/* line 224, ../sass/page-style.scss */
+.account-info .friends ul li .friend a {
+  float: right;
+  font-size: 1.8em;
+  color: HSL(130, 6%, 60%);
+}
+/* line 230, ../sass/page-style.scss */
+.account-info .friends ul li .friend p {
+  clear: both;
+  font-size: 1.5em;
+  color: HSL(130, 6%, 60%);
 }
 
-/* line 128, ../sass/page-style.scss */
+/* line 241, ../sass/page-style.scss */
 .user-poetry-info {
   float: right;
   box-sizing: border-box;
   width: 65%;
 }
-/* line 132, ../sass/page-style.scss */
+/* line 245, ../sass/page-style.scss */
 .user-poetry-info .total-number {
   margin-top: 20px;
   position: relative;
   overflow: hidden;
 }
-/* line 136, ../sass/page-style.scss */
+/* line 249, ../sass/page-style.scss */
 .user-poetry-info .total-number li {
   display: inline-block;
   width: 33.33%;
@@ -212,25 +350,25 @@ nav .nav-right a {
   position: relative;
   background-color: white;
 }
-/* line 143, ../sass/page-style.scss */
+/* line 256, ../sass/page-style.scss */
 .user-poetry-info .total-number li h2 {
   padding: 5px;
 }
-/* line 145, ../sass/page-style.scss */
+/* line 258, ../sass/page-style.scss */
 .user-poetry-info .total-number li h2 a {
   color: HSL(137, 20%, 24%);
   text-decoration: none;
 }
-/* line 149, ../sass/page-style.scss */
+/* line 262, ../sass/page-style.scss */
 .user-poetry-info .total-number li h2 a:hover {
   color: HSL(130, 6%, 60%);
 }
-/* line 155, ../sass/page-style.scss */
+/* line 268, ../sass/page-style.scss */
 .user-poetry-info .total-number li p {
   font-size: 1.3em;
   color: HSL(130, 6%, 60%);
 }
-/* line 161, ../sass/page-style.scss */
+/* line 274, ../sass/page-style.scss */
 .user-poetry-info .total-number li:first-child::before {
   content: "";
   position: absolute;
@@ -240,11 +378,11 @@ nav .nav-right a {
   top: 63px;
   left: 0;
 }
-/* line 172, ../sass/page-style.scss */
+/* line 285, ../sass/page-style.scss */
 .user-poetry-info .poetry-familiar {
   margin-top: 20px;
 }
-/* line 174, ../sass/page-style.scss */
+/* line 287, ../sass/page-style.scss */
 .user-poetry-info .poetry-familiar li {
   position: relative;
   text-align: center;
@@ -254,7 +392,7 @@ nav .nav-right a {
   box-sizing: border-box;
   border-bottom: 1px HSL(45, 12%, 93%) solid;
 }
-/* line 182, ../sass/page-style.scss */
+/* line 295, ../sass/page-style.scss */
 .user-poetry-info .poetry-familiar li img {
   position: absolute;
   width: 40px;
@@ -263,21 +401,21 @@ nav .nav-right a {
   left: 30px;
   top: 10px;
 }
-/* line 191, ../sass/page-style.scss */
+/* line 304, ../sass/page-style.scss */
 .user-poetry-info .poetry-familiar li .poetry-info {
   color: HSL(137, 20%, 24%);
 }
-/* line 194, ../sass/page-style.scss */
+/* line 307, ../sass/page-style.scss */
 .user-poetry-info .poetry-familiar li .poetry-info h3 i {
   font-size: 10px;
   margin-left: 20px;
 }
-/* line 198, ../sass/page-style.scss */
+/* line 311, ../sass/page-style.scss */
 .user-poetry-info .poetry-familiar li .poetry-info h3 span {
   color: HSL(130, 6%, 60%);
 }
 
-/* line 210, ../sass/page-style.scss */
+/* line 323, ../sass/page-style.scss */
 .poetry-class {
   float: left;
   width: 100%;
@@ -285,7 +423,7 @@ nav .nav-right a {
   overflow: hidden;
   box-sizing: border-box;
 }
-/* line 216, ../sass/page-style.scss */
+/* line 329, ../sass/page-style.scss */
 .poetry-class .title {
   height: 40px;
   line-height: 40px;
@@ -294,11 +432,11 @@ nav .nav-right a {
   border-bottom: 2px HSL(45, 12%, 93%) solid;
   border-radius: 3px;
 }
-/* line 224, ../sass/page-style.scss */
+/* line 337, ../sass/page-style.scss */
 .poetry-class ul {
   margin-bottom: 20px;
 }
-/* line 226, ../sass/page-style.scss */
+/* line 339, ../sass/page-style.scss */
 .poetry-class ul li {
   display: inline-block;
   width: 25%;
@@ -310,7 +448,7 @@ nav .nav-right a {
   border: 1px HSL(45, 12%, 93%) solid;
 }
 
-/* line 243, ../sass/page-style.scss */
+/* line 356, ../sass/page-style.scss */
 footer {
   height: 60px;
   width: 100%;
