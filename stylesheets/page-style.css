@@ -98,35 +98,43 @@ nav {
   background-color: HSL(0, 0%, 100%);
   width: 100%;
   height: 6em;
+  top: 0%;
   -moz-box-shadow: 0px 0px 5px #333333;
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
   line-height: 6em;
   box-sizing: border-box;
+  z-index: 9999;
 }
-/* line 45, ../sass/page-style.scss */
+/* line 47, ../sass/page-style.scss */
 nav a:hover {
   color: HSL(130, 6%, 60%);
 }
-/* line 49, ../sass/page-style.scss */
+/* line 51, ../sass/page-style.scss */
+nav .nav-container {
+  margin: auto;
+  width: 1000px;
+  position: relative;
+}
+/* line 57, ../sass/page-style.scss */
 nav .nav-left {
   width: 50%;
   float: left;
 }
-/* line 52, ../sass/page-style.scss */
+/* line 60, ../sass/page-style.scss */
 nav .nav-left .logo {
   position: absolute;
-  left: 80px;
+  left: 0px;
   font-size: 2.4em;
   color: HSL(137, 20%, 24%);
   text-decoration: none;
 }
-/* line 60, ../sass/page-style.scss */
+/* line 68, ../sass/page-style.scss */
 nav .nav-left .search-input {
   position: absolute;
-  margin-left: 170px;
+  margin-left: 100px;
 }
-/* line 63, ../sass/page-style.scss */
+/* line 71, ../sass/page-style.scss */
 nav .nav-left .search-input input {
   width: 250px;
   height: 30px;
@@ -134,92 +142,69 @@ nav .nav-left .search-input input {
   border: 1px HSL(45, 12%, 93%) solid;
   padding-left: 12px;
 }
-/* line 70, ../sass/page-style.scss */
+/* line 78, ../sass/page-style.scss */
 nav .nav-left .search-input input:focus {
   outline: 0;
 }
-/* line 75, ../sass/page-style.scss */
+/* line 83, ../sass/page-style.scss */
 nav .nav-left .search-input i {
   font-size: 1.5em;
   position: absolute;
   top: 22px;
   left: 230px;
 }
-/* line 84, ../sass/page-style.scss */
+/* line 92, ../sass/page-style.scss */
 nav .nav-right {
   width: 50%;
   float: right;
   text-align: right;
   font-size: 2.4em;
 }
-/* line 89, ../sass/page-style.scss */
+/* line 97, ../sass/page-style.scss */
+nav .nav-right img {
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding-top: 20px;
+}
+/* line 103, ../sass/page-style.scss */
 nav .nav-right a {
   text-decoration: none;
   color: HSL(137, 20%, 24%);
   margin: auto 10px;
 }
-/* line 93, ../sass/page-style.scss */
-nav .nav-right a:last-child {
-  margin-right: 80px;
-}
 
-/* line 100, ../sass/page-style.scss */
+/* line 111, ../sass/page-style.scss */
 .container {
   width: 1000px;
   overflow: hidden;
-  margin: auto;
+  margin: 60px auto 20px auto;
 }
 
-/* line 106, ../sass/page-style.scss */
-header {
-  background: url("/images/02.jpg") no-repeat;
-  background-size: cover;
-  height: 560px;
-  margin-top: 80px;
-  overflow: hidden;
-  border: 1px HSL(45, 12%, 93%) solid;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-/* line 115, ../sass/page-style.scss */
-header div {
-  width: 120px;
-  height: 120px;
-  margin: 200px auto 20px auto;
-  border-radius: 50%;
-  border: 2px HSL(240, 3%, 79%) solid;
-  padding: 5px;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
-}
-/* line 123, ../sass/page-style.scss */
-header div img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-}
-/* line 130, ../sass/page-style.scss */
-header h1, header h3 {
-  color: white;
-  margin-bottom: 10px;
-}
-
-/* line 136, ../sass/page-style.scss */
+/* line 118, ../sass/page-style.scss */
 .account-info {
   float: left;
+  width: 35%;
+  margin-top: 20px;
   box-sizing: border-box;
-  width: 100%;
-  border-right: 5px HSL(45, 12%, 93%) solid;
 }
-/* line 141, ../sass/page-style.scss */
-.account-info .total-number {
+
+/* line 128, ../sass/page-style.scss */
+.user-poetry-info {
+  float: right;
+  box-sizing: border-box;
+  width: 65%;
+}
+/* line 132, ../sass/page-style.scss */
+.user-poetry-info .total-number {
   margin-top: 20px;
   position: relative;
   overflow: hidden;
 }
-/* line 145, ../sass/page-style.scss */
-.account-info .total-number li {
+/* line 136, ../sass/page-style.scss */
+.user-poetry-info .total-number li {
   display: inline-block;
   width: 33.33%;
   float: left;
@@ -227,26 +212,26 @@ header h1, header h3 {
   position: relative;
   background-color: white;
 }
-/* line 152, ../sass/page-style.scss */
-.account-info .total-number li h2 {
+/* line 143, ../sass/page-style.scss */
+.user-poetry-info .total-number li h2 {
   padding: 5px;
 }
-/* line 154, ../sass/page-style.scss */
-.account-info .total-number li h2 a {
+/* line 145, ../sass/page-style.scss */
+.user-poetry-info .total-number li h2 a {
   color: HSL(137, 20%, 24%);
   text-decoration: none;
 }
-/* line 158, ../sass/page-style.scss */
-.account-info .total-number li h2 a:hover {
+/* line 149, ../sass/page-style.scss */
+.user-poetry-info .total-number li h2 a:hover {
   color: HSL(130, 6%, 60%);
 }
-/* line 164, ../sass/page-style.scss */
-.account-info .total-number li p {
+/* line 155, ../sass/page-style.scss */
+.user-poetry-info .total-number li p {
   font-size: 1.3em;
   color: HSL(130, 6%, 60%);
 }
-/* line 170, ../sass/page-style.scss */
-.account-info .total-number li:first-child::before {
+/* line 161, ../sass/page-style.scss */
+.user-poetry-info .total-number li:first-child::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -255,22 +240,22 @@ header h1, header h3 {
   top: 63px;
   left: 0;
 }
-/* line 181, ../sass/page-style.scss */
-.account-info .poetry-familiar {
+/* line 172, ../sass/page-style.scss */
+.user-poetry-info .poetry-familiar {
   margin-top: 20px;
 }
-/* line 183, ../sass/page-style.scss */
-.account-info .poetry-familiar li {
+/* line 174, ../sass/page-style.scss */
+.user-poetry-info .poetry-familiar li {
   position: relative;
-  text-align: left;
+  text-align: center;
   line-height: 60px;
   background-color: HSL(0, 0%, 100%);
   overflow: hidden;
   box-sizing: border-box;
   border-bottom: 1px HSL(45, 12%, 93%) solid;
 }
-/* line 191, ../sass/page-style.scss */
-.account-info .poetry-familiar li img {
+/* line 182, ../sass/page-style.scss */
+.user-poetry-info .poetry-familiar li img {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -278,35 +263,29 @@ header h1, header h3 {
   left: 30px;
   top: 10px;
 }
-/* line 200, ../sass/page-style.scss */
-.account-info .poetry-familiar li .poetry-info {
+/* line 191, ../sass/page-style.scss */
+.user-poetry-info .poetry-familiar li .poetry-info {
   color: HSL(137, 20%, 24%);
-  float: left;
 }
-/* line 203, ../sass/page-style.scss */
-.account-info .poetry-familiar li .poetry-info h3 {
-  margin-left: 90px;
-}
-/* line 205, ../sass/page-style.scss */
-.account-info .poetry-familiar li .poetry-info h3 i {
+/* line 194, ../sass/page-style.scss */
+.user-poetry-info .poetry-familiar li .poetry-info h3 i {
   font-size: 10px;
   margin-left: 20px;
 }
-/* line 209, ../sass/page-style.scss */
-.account-info .poetry-familiar li .poetry-info h3 span {
+/* line 198, ../sass/page-style.scss */
+.user-poetry-info .poetry-familiar li .poetry-info h3 span {
   color: HSL(130, 6%, 60%);
 }
 
-/* line 222, ../sass/page-style.scss */
+/* line 210, ../sass/page-style.scss */
 .poetry-class {
   float: left;
-  width: 65%;
+  width: 100%;
   margin-top: 20px;
   overflow: hidden;
   box-sizing: border-box;
-  border-left: 5px HSL(45, 12%, 93%) solid;
 }
-/* line 229, ../sass/page-style.scss */
+/* line 216, ../sass/page-style.scss */
 .poetry-class .title {
   height: 40px;
   line-height: 40px;
@@ -315,19 +294,23 @@ header h1, header h3 {
   border-bottom: 2px HSL(45, 12%, 93%) solid;
   border-radius: 3px;
 }
-/* line 238, ../sass/page-style.scss */
+/* line 224, ../sass/page-style.scss */
+.poetry-class ul {
+  margin-bottom: 20px;
+}
+/* line 226, ../sass/page-style.scss */
 .poetry-class ul li {
   display: inline-block;
   width: 25%;
-  height: 300px;
-  line-height: 300px;
+  height: 250px;
+  line-height: 250px;
   float: left;
   box-sizing: border-box;
   background-color: white;
   border: 1px HSL(45, 12%, 93%) solid;
 }
 
-/* line 255, ../sass/page-style.scss */
+/* line 243, ../sass/page-style.scss */
 footer {
   height: 60px;
   width: 100%;
