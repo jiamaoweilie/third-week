@@ -54,6 +54,10 @@ nav {
   .nav-left {
     width: 50%;
     float: left;
+    a:hover{
+      color: $font-color-green-lighter;
+    }
+
     .logo {
       position: absolute;
       left: 0px;
@@ -101,6 +105,10 @@ nav {
       text-decoration: none;
       color: $font-color-green;
       margin: auto 10px;
+    }
+
+    a:hover{
+      color: $font-color-green-lighter;
     }
   }
 }
@@ -157,6 +165,10 @@ nav {
     font-size: 2.0em;
     text-decoration: none;
     color: $font-color-green-lighter;
+
+    &:hover{
+      color: $font-color-green;
+    }
   }
 
   .recent-read {
@@ -186,6 +198,10 @@ nav {
           @include rotate(90deg);
           text-decoration: none;
           color: $font-color-green-lighter;
+
+          &:hover{
+            color: $font-color-green;
+          }
         }
       }
       .icon-dot {
@@ -227,6 +243,11 @@ nav {
             float: right;
             font-size: 1.8em;
             color: $font-color-green-lighter;
+            text-decoration: none;
+
+            &:hover{
+              color: $font-color-green;
+            }
           }
 
           p {
@@ -348,4 +369,25 @@ footer {
   height: 60px;
   width: 100%;
   background-color: $background-color-white;
+  .footer-container{
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    line-height: 60px;
+    font-size: 1.8em;
+    a{
+      text-decoration: none;
+      float: left;
+      margin-right: 20px;
+      color: $font-color-green-lighter;
+      &:hover{
+        color: $font-color-green;
+      }
+    }
+
+    p{
+      float: right;
+      color: $font-color-green-lighter;
+    }
+  }
 }
