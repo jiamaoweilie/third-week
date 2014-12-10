@@ -1,6 +1,7 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/css3/box-shadow";
+@import "compass/css3/transform";
 
 $background-color-white: HSL(0, 0%, 100%);
 $background-color: HSL(45, 12%, 93%);
@@ -137,6 +138,7 @@ nav {
       height: 120px;
       @include border-radius(50%);
       margin: 30px auto 20px auto;
+      @include transform(rotate(60deg));
     }
 
     h2 {
